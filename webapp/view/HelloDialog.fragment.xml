@@ -4,6 +4,16 @@
     <Dialog
         id="helloDialog"
         title="Hello {/recipient/name}">
+        <content>
+            <core:Icon
+            src="sap-icon://biometric-face"
+            size="8rem"
+            class="sapUiMediumMargin"/>
+            <core:Icon
+            src="sap-icon://thumb-up"
+            size="8rem"
+            class="sapUiMediumMargin"/>
+        </content>
         <beginButton>
             <Button
                 text="{i18n>dialogCloseButtonText}"
