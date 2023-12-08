@@ -3,7 +3,7 @@ sap.ui.define([
     "sap/m/MessageToast"
 ], (Controller, MessageToast) => {
     'use strict';
-    
+
     return Controller.extend("ui5.walkthrough.controller.HelloPanel", {
         onShowHello() {
             const oBundle = this.getView().getModel("i18n").getResourceBundle();
@@ -12,11 +12,14 @@ sap.ui.define([
 
             MessageToast.show(sMsg);
         },
-        onOpenDialog(){
+        onOpenDialog() {
             this.pDialog ??= this.loadFragment({
                 name: "ui5.walkthrough.view.HelloDialog"
             });
             this.pDialog.then((oDialog) => oDialog.open());
+        },
+        onCloseDialog() {
+            this.byId("helloDialog").close();
         }
     });
 });
