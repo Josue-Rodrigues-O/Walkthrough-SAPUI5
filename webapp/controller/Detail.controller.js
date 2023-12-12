@@ -16,7 +16,7 @@ sap.ui.define([
                 path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").invoicePath),
                 model: "invoice"
             });
-        },
+        }, 
         onNavBack() {
             const oHistory = History.getInstance();
             const sPreviousHash = oHistory.getPreviousHash();
