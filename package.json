@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "The UI5 walkthrough application",
     "scripts": {
-        "start": "ui5 serve -o test/unit/unitTests.qunit.html"
+        "start": "ui5 serve -o test/mockServer.html",
+        "test": "ui5 serve -o test/integration/opaTests.qunit.html"
     },
     "devDependencies": {
         "@ui5/cli": "^3.7.3",
