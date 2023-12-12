@@ -11,3 +11,4 @@
 # End of https://mrkandreev.name/snippets/gitignore-generator/#VisualStudioCode
 
 node_modules
+dist
