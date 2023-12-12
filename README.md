@@ -6,6 +6,7 @@ npm install --global @ui5/cli
 # Additional local install in your project
 npm install --save-dev @ui5/cli
 
+# Run the project in a local web server
 npm run build
 
 npm i -D local-web-server
