@@ -19,16 +19,22 @@ npm i -D local-web-server
 
 "scripts": {
         "start": "ui5 serve -o test/mockServer.html",
+        
         "build": "ui5 build -a",
+        
         "serve-dist": "ws --compress -d dist --open"
+        
     }
 
 to
 
 "scripts": {
         "start": "ui5 serve -o index.html",
+        
         "build": "ui5 build -a",
+        
         "serve-dist": "ws --compress -d dist --open"
+        
     }
 
 and run the command "npm start" (Without quotes)
