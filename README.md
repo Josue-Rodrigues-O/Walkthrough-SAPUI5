@@ -11,6 +11,4 @@ npm run build
 
 npm i -D local-web-server
 
-"npm run serve-dist"  || 
-       or             || (both without quotes)
-   "npm start"        ||
+"npm run serve-dist" or "npm start" (both without quotes)
