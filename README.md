@@ -17,22 +17,21 @@ npm i -D local-web-server
 
 - In the package.json file, modify the line that starts with "start"
 
+- From this:
+  
 "scripts": {
+
         "start": "ui5 serve -o test/mockServer.html",
-        
         "build": "ui5 build -a",
-        
         "serve-dist": "ws --compress -d dist --open"
-        
     }
-
-to
+    
+- to this:
 
 "scripts": {
+
         "start": "ui5 serve -o index.html",
-        
         "build": "ui5 build -a",
-        
         "serve-dist": "ws --compress -d dist --open"
         
     }
